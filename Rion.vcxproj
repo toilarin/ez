@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{3fb71c56-12bc-48c8-811c-eefda51e1207}</ProjectGuid>
+    <RootNamespace>Rion</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;D:\svae\Rion\Rion;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;RION_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;RION_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;RION_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;RION_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\New folder (4)\src\lapi.h" />
+    <ClInclude Include="..\..\..\New folder (4)\src\lauxlib.h" />
+    <ClInclude Include="..\..\..\New folder (4)\src\lcode.h" />
+    <ClInclude Include="..\..\..\New folder (4)\src\lctype.h" />
+    <ClInclude Include="..\..\..\New folder (4)\src\ldebug.h" />
+    <ClInclude Include="..\..\..\New folder (4)\src\ldo.h" />
+    <ClInclude Include="..\..\..\New folder (4)\src\lfunc.h" />
+    <ClInclude Include="..\..\..\New folder (4)\src\lgc.h" />
+    <ClInclude Include="..\..\..\New folder (4)\src\ljumptab.h" />
+    <ClInclude Include="..\..\..\New folder (4)\src\llex.h" />
+    <ClInclude Include="..\..\..\New folder (4)\src\llimits.h" />
+    <ClInclude Include="..\..\..\New folder (4)\src\lmem.h" />
+    <ClInclude Include="..\..\..\New folder (4)\src\lobject.h" />
+    <ClInclude Include="..\..\..\New folder (4)\src\lopcodes.h" />
+    <ClInclude Include="..\..\..\New folder (4)\src\lopnames.h" />
+    <ClInclude Include="..\..\..\New folder (4)\src\lparser.h" />
+    <ClInclude Include="..\..\..\New folder (4)\src\lprefix.h" />
+    <ClInclude Include="..\..\..\New folder (4)\src\lstate.h" />
+    <ClInclude Include="..\..\..\New folder (4)\src\lstring.h" />
+    <ClInclude Include="..\..\..\New folder (4)\src\ltable.h" />
+    <ClInclude Include="..\..\..\New folder (4)\src\ltm.h" />
+    <ClInclude Include="..\..\..\New folder (4)\src\lua.h" />
+    <ClInclude Include="..\..\..\New folder (4)\src\lua.hpp" />
+    <ClInclude Include="..\..\..\New folder (4)\src\luaconf.h" />
+    <ClInclude Include="..\..\..\New folder (4)\src\lualib.h" />
+    <ClInclude Include="..\..\..\New folder (4)\src\lundump.h" />
+    <ClInclude Include="..\..\..\New folder (4)\src\lvm.h" />
+    <ClInclude Include="..\..\..\New folder (4)\src\lzio.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\New folder (4)\src\lapi.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\lauxlib.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\lbaselib.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\lcode.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\lcorolib.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\lctype.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\ldblib.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\ldebug.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\ldo.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\ldump.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\lfunc.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\lgc.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\linit.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\liolib.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\llex.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\lmathlib.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\lmem.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\loadlib.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\lobject.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\lopcodes.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\loslib.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\lparser.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\lstate.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\lstring.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\lstrlib.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\ltable.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\ltablib.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\ltm.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\lua.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\luac.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\lundump.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\lutf8lib.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\lvm.c" />
+    <ClCompile Include="..\..\..\New folder (4)\src\lzio.c" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Rion.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\New folder (4)\src\Makefile" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

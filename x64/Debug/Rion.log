@@ -1,0 +1,2 @@
+﻿luac.obj : error LNK2005: main already defined in lua.obj
+D:\svae\Rion\x64\Debug\Rion.dll : fatal error LNK1169: one or more multiply defined symbols found
